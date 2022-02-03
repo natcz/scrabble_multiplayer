@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module CheckBoard</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>CheckBoard</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cnatal%5Cdesktop%5Cscrabble_multiplayer%5Cscrabble%5Ccheckboard.py">c:\users\natal\desktop\scrabble_multiplayer\scrabble\checkboard.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="CheckBoard.html#CheckBoard">CheckBoard</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="CheckBoard">class <strong>CheckBoard</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#CheckBoard">CheckBoard</a>(board)<br>
+&nbsp;<br>
+<a href="#CheckBoard">CheckBoard</a>&nbsp;class&nbsp;is&nbsp;a&nbsp;tool<br>
+to&nbsp;check&nbsp;if&nbsp;the&nbsp;player's&nbsp;move&nbsp;was&nbsp;correct<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="CheckBoard-__init__"><strong>__init__</strong></a>(self, board)</dt><dd><tt>Constructor&nbsp;of&nbsp;<a href="#CheckBoard">CheckBoard</a>&nbsp;class.<br>
+:param&nbsp;board:(list)&nbsp;board&nbsp;representation</tt></dd></dl>
+
+<dl><dt><a name="CheckBoard-checkBoard"><strong>checkBoard</strong></a>(self, eng_dict, word, coords)</dt><dd><tt>This&nbsp;function&nbsp;checks&nbsp;if&nbsp;you&nbsp;can&nbsp;place&nbsp;the&nbsp;word<br>
+with&nbsp;letter&nbsp;coordinates&nbsp;on&nbsp;the&nbsp;board.<br>
+It&nbsp;uses&nbsp;checkRows&nbsp;and&nbsp;checkColumns.<br>
+&nbsp;<br>
+:param&nbsp;eng_dict:(set)&nbsp;English&nbsp;dictionary<br>
+:param&nbsp;word:(string)&nbsp;newly&nbsp;placed&nbsp;word<br>
+:param&nbsp;coords:(itertools&nbsp;defaultdictionary)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;key:&nbsp;coordinates&nbsp;of&nbsp;the&nbsp;letter&nbsp;(x,y)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;val:&nbsp;letter<br>
+:return:&nbsp;boolean</tt></dd></dl>
+
+<dl><dt><a name="CheckBoard-checkColumns"><strong>checkColumns</strong></a>(self, eng_dict)</dt><dd><tt>This&nbsp;function&nbsp;checks&nbsp;if&nbsp;all&nbsp;of&nbsp;the&nbsp;words&nbsp;placed&nbsp;in&nbsp;columns<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;of&nbsp;the&nbsp;board&nbsp;are&nbsp;in&nbsp;the&nbsp;eng_dict<br>
+:param&nbsp;eng_dict:(set)&nbsp;english&nbsp;dictionary<br>
+:return:&nbsp;boolean</tt></dd></dl>
+
+<dl><dt><a name="CheckBoard-checkRows"><strong>checkRows</strong></a>(self, eng_dict)</dt><dd><tt>This&nbsp;function&nbsp;checks&nbsp;if&nbsp;all&nbsp;of&nbsp;the&nbsp;words<br>
+placed&nbsp;in&nbsp;rows&nbsp;of&nbsp;the&nbsp;board&nbsp;are&nbsp;in&nbsp;the&nbsp;eng_dict<br>
+:param&nbsp;eng_dict:(set)&nbsp;english&nbsp;dictionary&nbsp;(set&nbsp;of&nbsp;english&nbsp;words)<br>
+:return:&nbsp;boolean</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table>
+</body></html>

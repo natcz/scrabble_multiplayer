@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module Sack</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>Sack</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cnatal%5Cdesktop%5Cscrabble_multiplayer%5Cscrabble%5Csack.py">c:\users\natal\desktop\scrabble_multiplayer\scrabble\sack.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="Sack.html#Sack">Sack</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Sack">class <strong>Sack</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Sack">Sack</a>&nbsp;class&nbsp;is&nbsp;a&nbsp;represenation&nbsp;of&nbsp;the&nbsp;sack&nbsp;(bag&nbsp;of&nbsp;letters)<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Sack-__init__"><strong>__init__</strong></a>(self)</dt><dd><tt>Constructor&nbsp;of&nbsp;<a href="#Sack">Sack</a>&nbsp;class.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;sack:(list)&nbsp;list&nbsp;of&nbsp;letters&nbsp;available&nbsp;in&nbsp;the&nbsp;game<br>
+&nbsp;&nbsp;&nbsp;&nbsp;bag:(Letters)&nbsp;Letters()&nbsp;<a href="builtins.html#object">object</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;with&nbsp;attribute&nbsp;bag&nbsp;which&nbsp;is&nbsp;a&nbsp;dict&nbsp;where<br>
+&nbsp;&nbsp;&nbsp;&nbsp;key:&nbsp;letter&nbsp;-&nbsp;val:&nbsp;[points&nbsp;you&nbsp;get&nbsp;for&nbsp;the&nbsp;letter,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;number&nbsp;of&nbsp;tiles&nbsp;in&nbsp;the&nbsp;bag]</tt></dd></dl>
+
+<dl><dt><a name="Sack-append"><strong>append</strong></a>(self, letter)</dt><dd><tt>This&nbsp;function&nbsp;append&nbsp;letter&nbsp;to&nbsp;the&nbsp;sack.<br>
+:param&nbsp;letter:(char)&nbsp;letter&nbsp;to&nbsp;add<br>
+:return:&nbsp;void&nbsp;-&nbsp;only&nbsp;changing&nbsp;the&nbsp;<a href="builtins.html#object">object</a></tt></dd></dl>
+
+<dl><dt><a name="Sack-getSack"><strong>getSack</strong></a>(self)</dt><dd><tt>This&nbsp;function&nbsp;returns&nbsp;a&nbsp;sack.<br>
+:return:&nbsp;list&nbsp;-&nbsp;sack</tt></dd></dl>
+
+<dl><dt><a name="Sack-initialize"><strong>initialize</strong></a>(self)</dt><dd><tt>This&nbsp;function&nbsp;initializes&nbsp;the&nbsp;sack<br>
+It&nbsp;adds&nbsp;each&nbsp;letter&nbsp;from&nbsp;the&nbsp;bag&nbsp;specified&nbsp;number&nbsp;of&nbsp;times<br>
+:return:&nbsp;void&nbsp;-&nbsp;only&nbsp;changing&nbsp;the&nbsp;<a href="builtins.html#object">object</a></tt></dd></dl>
+
+<dl><dt><a name="Sack-leftLetters"><strong>leftLetters</strong></a>(self)</dt><dd><tt>This&nbsp;function&nbsp;gives&nbsp;number&nbsp;of&nbsp;letters&nbsp;left&nbsp;in&nbsp;the&nbsp;sack<br>
+:return:&nbsp;int&nbsp;-&nbsp;&nbsp;number&nbsp;of&nbsp;letters&nbsp;left&nbsp;in&nbsp;the&nbsp;sack</tt></dd></dl>
+
+<dl><dt><a name="Sack-remove"><strong>remove</strong></a>(self, letter)</dt><dd><tt>This&nbsp;function&nbsp;removes&nbsp;letter&nbsp;from&nbsp;the&nbsp;sack.<br>
+:param&nbsp;letter:(char)&nbsp;letter&nbsp;to&nbsp;remove<br>
+:return:&nbsp;void&nbsp;-&nbsp;only&nbsp;changing&nbsp;the&nbsp;<a href="builtins.html#object">object</a></tt></dd></dl>
+
+<dl><dt><a name="Sack-takeLetter"><strong>takeLetter</strong></a>(self)</dt><dd><tt>This&nbsp;function&nbsp;gives&nbsp;random&nbsp;letter&nbsp;out&nbsp;of&nbsp;the&nbsp;sack.<br>
+It&nbsp;uses&nbsp;shuffle&nbsp;to&nbsp;randomize&nbsp;the&nbsp;output<br>
+:return:&nbsp;char&nbsp;-&nbsp;letter</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table>
+</body></html>

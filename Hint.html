@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module Hint</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>Hint</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cnatal%5Cdesktop%5Cscrabble_multiplayer%5Cscrabble%5Chint.py">c:\users\natal\desktop\scrabble_multiplayer\scrabble\hint.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="Hint.html#Hint">Hint</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Hint">class <strong>Hint</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Hint">Hint</a>(board,&nbsp;eng_dict,&nbsp;rack)<br>
+&nbsp;<br>
+<a href="#Hint">Hint</a>&nbsp;class&nbsp;is&nbsp;a&nbsp;tool&nbsp;to&nbsp;generate&nbsp;word&nbsp;(and&nbsp;starting&nbsp;coordinates)<br>
+which&nbsp;can&nbsp;be&nbsp;used&nbsp;by&nbsp;a&nbsp;player.<br>
+It&nbsp;runs&nbsp;when&nbsp;player&nbsp;hits&nbsp;the&nbsp;"HINT"&nbsp;button.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Hint-__init__"><strong>__init__</strong></a>(self, board, eng_dict, rack)</dt><dd><tt>Constructor&nbsp;of&nbsp;<a href="#Hint">Hint</a>&nbsp;class.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;:param&nbsp;board:(list)&nbsp;representation&nbsp;of&nbsp;the&nbsp;board<br>
+&nbsp;&nbsp;&nbsp;&nbsp;:param&nbsp;eng_dict:(set)&nbsp;set&nbsp;of&nbsp;english&nbsp;words<br>
+&nbsp;&nbsp;&nbsp;&nbsp;:param&nbsp;rack:(list)&nbsp;player's&nbsp;rack</tt></dd></dl>
+
+<dl><dt><a name="Hint-findHint"><strong>findHint</strong></a>(self)</dt><dd><tt>This&nbsp;function&nbsp;finds&nbsp;word<br>
+and&nbsp;its&nbsp;letter&nbsp;coordinates<br>
+which&nbsp;player&nbsp;can&nbsp;make&nbsp;a&nbsp;move&nbsp;with.<br>
+It&nbsp;takes&nbsp;words&nbsp;from&nbsp;the&nbsp;english&nbsp;word&nbsp;set&nbsp;(eng_dict)<br>
+that&nbsp;have&nbsp;a&nbsp;lot&nbsp;of&nbsp;the&nbsp;same&nbsp;letters<br>
+with&nbsp;player's&nbsp;rack&nbsp;and<br>
+tries&nbsp;to&nbsp;put&nbsp;them&nbsp;around&nbsp;letters&nbsp;already&nbsp;on&nbsp;the&nbsp;board.<br>
+:return:&nbsp;string,&nbsp;list&nbsp;-&nbsp;&nbsp;word,&nbsp;list&nbsp;of&nbsp;letter&nbsp;coordinates</tt></dd></dl>
+
+<dl><dt><a name="Hint-freeDown"><strong>freeDown</strong></a>(self, row, col)</dt><dd><tt>This&nbsp;function&nbsp;checks&nbsp;how&nbsp;much&nbsp;free<br>
+space&nbsp;is&nbsp;under&nbsp;the&nbsp;letter&nbsp;on&nbsp;the&nbsp;board<br>
+:param&nbsp;row:(int)&nbsp;row&nbsp;of&nbsp;the&nbsp;board&nbsp;&nbsp;in&nbsp;which&nbsp;the&nbsp;letter&nbsp;is<br>
+:param&nbsp;col:(int)&nbsp;column&nbsp;of&nbsp;the&nbsp;board&nbsp;&nbsp;in&nbsp;which&nbsp;the&nbsp;letter&nbsp;is<br>
+:return:&nbsp;int&nbsp;-&nbsp;number&nbsp;of&nbsp;blank&nbsp;space</tt></dd></dl>
+
+<dl><dt><a name="Hint-freeLeft"><strong>freeLeft</strong></a>(self, row, col)</dt><dd><tt>This&nbsp;function&nbsp;checks&nbsp;how&nbsp;much&nbsp;free&nbsp;space<br>
+is&nbsp;on&nbsp;the&nbsp;left&nbsp;side&nbsp;of&nbsp;&nbsp;the&nbsp;letter&nbsp;on&nbsp;the&nbsp;board<br>
+:param&nbsp;row:(int)&nbsp;row&nbsp;of&nbsp;the&nbsp;board&nbsp;&nbsp;in&nbsp;which&nbsp;the&nbsp;letter&nbsp;is<br>
+:param&nbsp;col:(int)&nbsp;column&nbsp;of&nbsp;the&nbsp;board&nbsp;&nbsp;in&nbsp;which&nbsp;the&nbsp;letter&nbsp;is<br>
+:return:&nbsp;int&nbsp;-&nbsp;number&nbsp;of&nbsp;blank&nbsp;space</tt></dd></dl>
+
+<dl><dt><a name="Hint-freeRight"><strong>freeRight</strong></a>(self, row, col)</dt><dd><tt>This&nbsp;function&nbsp;checks&nbsp;how&nbsp;much&nbsp;free&nbsp;space<br>
+is&nbsp;on&nbsp;the&nbsp;right&nbsp;side&nbsp;of&nbsp;&nbsp;the&nbsp;letter&nbsp;on&nbsp;the&nbsp;board<br>
+:param&nbsp;row:(int)&nbsp;row&nbsp;of&nbsp;the&nbsp;board&nbsp;&nbsp;in&nbsp;which&nbsp;the&nbsp;letter&nbsp;is<br>
+:param&nbsp;col:(int)&nbsp;column&nbsp;of&nbsp;the&nbsp;board&nbsp;&nbsp;in&nbsp;which&nbsp;the&nbsp;letter&nbsp;is<br>
+:return:&nbsp;int&nbsp;-&nbsp;number&nbsp;of&nbsp;blank&nbsp;space</tt></dd></dl>
+
+<dl><dt><a name="Hint-freeUp"><strong>freeUp</strong></a>(self, row, col)</dt><dd><tt>This&nbsp;function&nbsp;checks&nbsp;how&nbsp;much<br>
+free&nbsp;space&nbsp;is&nbsp;above&nbsp;the&nbsp;letter&nbsp;on&nbsp;the&nbsp;board<br>
+:param&nbsp;row:(int)&nbsp;row&nbsp;of&nbsp;the&nbsp;board&nbsp;&nbsp;in&nbsp;which&nbsp;the&nbsp;letter&nbsp;is<br>
+:param&nbsp;col:(int)&nbsp;column&nbsp;of&nbsp;the&nbsp;board&nbsp;&nbsp;in&nbsp;which&nbsp;the&nbsp;letter&nbsp;is<br>
+:return:&nbsp;int&nbsp;-&nbsp;number&nbsp;of&nbsp;blank&nbsp;space</tt></dd></dl>
+
+<dl><dt><a name="Hint-similarLetters"><strong>similarLetters</strong></a>(self, word1, word2)</dt><dd><tt>This&nbsp;function&nbsp;calculates&nbsp;number<br>
+of&nbsp;letters&nbsp;that&nbsp;are&nbsp;in&nbsp;both&nbsp;word1&nbsp;and&nbsp;word2.<br>
+It&nbsp;creates&nbsp;a&nbsp;itertools&nbsp;default&nbsp;dictionary<br>
+for&nbsp;both&nbsp;word1&nbsp;and&nbsp;word2<br>
+where&nbsp;key:&nbsp;letter<br>
+val:&nbsp;number&nbsp;of&nbsp;instances&nbsp;of&nbsp;letters<br>
+and&nbsp;then&nbsp;counts&nbsp;how&nbsp;many&nbsp;letters<br>
+are&nbsp;the&nbsp;same&nbsp;in&nbsp;both&nbsp;words.<br>
+:param&nbsp;word1:(string)&nbsp;first&nbsp;word<br>
+:param&nbsp;word2:(string)&nbsp;second&nbsp;word<br>
+:return:&nbsp;int&nbsp;-&nbsp;number&nbsp;of&nbsp;common&nbsp;letters</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table>
+</body></html>
